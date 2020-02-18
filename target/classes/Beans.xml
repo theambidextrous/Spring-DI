@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+     
+     <!-- if let say implemented class is dig -->
+     <bean id="activity" class="dev4money.classes.Eat"></bean>
+     
+     <!-- Spring Dependency injection bean -->
+      <bean id="farmer" class="dev4money.classes.Farmer">
+      	<property name="NumberOfAnimals" value="4567"></property>
+      </bean>
+     <!--
+    <bean id="play" class="dev4money.classes.Play"></bean>
+    <bean id="dig" class="dev4money.classes.Dig"></bean>
+    <bean id="eat" class="dev4money.classes.Eat"></bean>
+    -->
+     
+</beans>
